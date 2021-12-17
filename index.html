@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SasaAfya</title>
+    <link rel="stylesheet" href="./Styles/main.css" />
+  </head>
+  <body>
+    <div class="blurr"></div>
+    <div class="nav">
+      <div class="logo">
+        <img id="logo" src="./Images/SasaAfyaLogoWhite.svg" alt="logo" />
+        <span>SasaAfya</span>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Lifestyle</a></li>
+        </ul>
+
+        <button id="nav_login">Log In</button>
+      </div>
+
+      <img id="menu" src="./Images/NavIcon.svg" alt="hamburger" />
+    </div>
+
+    <div class="hero">
+      <h1>selfcare made simple</h1>
+    </div>
+
+    <div class="buttons">
+      <button class="create-account">create account</button>
+      <button class="login">log in</button>
+    </div>
+
+    <div id="login">
+      <img id="cancel" src="./Images/CancelIcon.svg" alt="cancel" />
+      <img id="login_logo" src="./Images/SasaAfyaLogoDark.svg" alt="logo" />
+
+      <p class="login_txt">Log In</p>
+      <div id="loginbtns">
+        <button>
+          <img src="./Images/search.svg" alt="google" /> log in with google
+        </button>
+        <button>
+          <img src="./Images/facebook.svg" alt="fb" /> log in with facebook
+        </button>
+        <button>
+          <img src="./Images/speech-bubble.svg" alt="phone" /> log in with phone
+        </button>
+      </div>
+      <p id="info">
+        By clicking Log In you agrees to our Terms. Learn how we process your
+        data in our <a href="#">privacy policy</a> and
+        <a href="#">Cookie policy</a>
+      </p>
+    </div>
+
+    <script>
+      const loginBtn = document.querySelector(".login");
+      const loginForm = document.querySelector("#login");
+      const cancelBtn = document.querySelector("#cancel");
+      const navLoginBtn = document.querySelector("#nav_login");
+
+      loginBtn.addEventListener("click", function () {
+        loginForm.style.cssText = "display:block;";
+      });
+      cancelBtn.addEventListener("click", function () {
+        loginForm.style.cssText = "display:none;";
+      });
+      navLoginBtn.addEventListener("click", function () {
+        loginForm.style.cssText = "display:block;";
+      });
+    </script>
+  </body>
+</html>

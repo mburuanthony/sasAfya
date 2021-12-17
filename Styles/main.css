@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c");
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  z-index: 1000;
+  padding: 1rem 10px 1rem 10px;
+}
+
+.nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .logo span {
+  font-size: 2rem;
+}
+
+.nav .links {
+  display: none;
+}
+
+.nav img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.hero {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 15rem auto 6rem auto;
+  z-index: 1000;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.buttons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.buttons button {
+  width: 20rem;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons .create-account {
+  background-color: #fff;
+  color: #000;
+}
+
+.buttons .login {
+  background-color: transparent;
+  color: #fff;
+}
+
+#login {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+#login #cancel {
+  width: 2rem;
+  height: 2rem;
+  padding: 4px;
+  border: 1px solid #00e5c0;
+  border-radius: 50%;
+  float: right;
+  margin: 1rem 1rem 0 0;
+  cursor: pointer;
+}
+
+#login #login_logo {
+  width: 20%;
+  margin: 1rem 50% 0 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#login .login_txt {
+  margin: 6rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #498deb;
+}
+
+#login #loginbtns {
+  width: 100%;
+}
+
+#login #loginbtns button {
+  width: 60%;
+  margin: 0 auto 1rem auto;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 0;
+  border-radius: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#login #loginbtns button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#login #info {
+  text-align: center;
+  font-size: 1rem;
+  color: #00e5c0;
+  padding: 0 8px;
+}
+
+@media only screen and (min-width: 800px) {
+  .nav #menu {
+    display: none;
+  }
+  .nav .links {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav .links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .links ul li {
+    list-style: none;
+    margin: 0 0 0 1rem;
+  }
+  .nav .links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .nav .links button {
+    border: 0;
+    border-radius: 8px;
+    color: #498deb;
+    background-color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .buttons .create-account {
+    background: -webkit-gradient(linear, left top, right top, from(#3b3b83), color-stop(89%, #dadae4), to(#00d4ff));
+    background: linear-gradient(90deg, #3b3b83 0%, #dadae4 89%, #00d4ff 100%);
+    color: #fff;
+    border: 0;
+  }
+  .buttons .login {
+    display: none;
+  }
+  #login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 60vh;
+    border-radius: 8px;
+  }
+  #login #login_logo {
+    width: 4rem;
+    height: 3rem;
+  }
+  #login .login_txt {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #login {
+    width: 40vw;
+  }
+  #login .login_txt {
+    margin: 2rem 0 0 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../Images/landing2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.blurr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0.25;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #b4b4b4;
+}
+/*# sourceMappingURL=main.css.map */

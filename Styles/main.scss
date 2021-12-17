@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c");
+@import "./nav";
+@import "./hero";
+@import "./buttons";
+@import "./login";
+@import "./mediQuery";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../Images/landing2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.blurr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0.25;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #b4b4b4;
+}
